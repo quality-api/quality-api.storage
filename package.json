@@ -1,0 +1,49 @@
+{
+    "name": "@quality-api/storage",
+    "version": "1.0.0",
+    "description": "Process-wide, persistent, in-memory storage",
+    "keywords": [
+        "qualityapi",
+        "quality-api",
+        "library",
+        "types",
+        "typescript",
+        "type-safe",
+        "quality-api-storage",
+        "quality-api/storage",
+        "@quality-api/storage",
+        "util",
+        "utils",
+        "utility",
+        "utilities"
+    ],
+    "homepage": "https://quality-api.dev",
+    "bugs": {
+        "url": "https://github.com/quality-api/quality-api.storage/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/quality-api/quality-api.storage.git"
+    },
+    "exports": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+    },
+    "license": "Apache-2.0",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/node": "^26.1.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^7.0.2"
+    },
+    "files": [
+        "dist"
+    ]
+}
