@@ -10,7 +10,7 @@ namespace Store {
     }
 
     /** Gets a value from the storage namespace in `globalThis`. If none, it returns `null`. */
-    export function getValue<T>(key: string) {
+    export function get<T>(key: string) {
         ensureNamespace();
 
         const value =
@@ -21,7 +21,7 @@ namespace Store {
     }
 
     /** Sets a value in the storage namespace in `globalThis`. */
-    export function setValue<T>(key: string, value: T) {
+    export function set<T>(key: string, value: T) {
         ensureNamespace();
 
         // @ts-expect-error
