@@ -1,6 +1,6 @@
 {
     "name": "@quality-api/storage",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Process-wide, persistent, in-memory storage",
     "keywords": [
         "qualityapi",

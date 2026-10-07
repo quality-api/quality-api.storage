@@ -1,5 +1,3 @@
-export { default as Storage } from "./Storage";
+import Store from "./Store";
 
-export * from "./Storage";
-
-export default Storage;
+export default Store;

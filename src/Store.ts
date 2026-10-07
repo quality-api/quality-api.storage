@@ -1,6 +1,6 @@
 const GLOBALTHIS_NAMESPACE_KEY = "__quality-api/storage__";
 
-namespace Storage {
+namespace Store {
 
     function ensureNamespace() {
         if (!(GLOBALTHIS_NAMESPACE_KEY in globalThis))
@@ -10,7 +10,7 @@ namespace Storage {
     }
 
     /** Gets a value from the storage namespace in `globalThis`. If none, it returns `null`. */
-    export function getValue<T>(key: string) {
+    export function get<T>(key: string) {
         ensureNamespace();
 
         const value =
@@ -21,7 +21,7 @@ namespace Storage {
     }
 
     /** Sets a value in the storage namespace in `globalThis`. */
-    export function setValue<T>(key: string, value: T) {
+    export function set<T>(key: string, value: T) {
         ensureNamespace();
 
         // @ts-expect-error
@@ -31,4 +31,4 @@ namespace Storage {
 
 }
 
-export default Storage;
+export default Store;
