@@ -1,6 +1,6 @@
 const GLOBALTHIS_NAMESPACE_KEY = "__quality-api/storage__";
 
-namespace Storage {
+namespace Store {
 
     function ensureNamespace() {
         if (!(GLOBALTHIS_NAMESPACE_KEY in globalThis))
@@ -31,4 +31,4 @@ namespace Storage {
 
 }
 
-export default Storage;
+export default Store;
